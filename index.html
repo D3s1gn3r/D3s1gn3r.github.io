@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<title>Document</title>
+	<script src="js/loadlist.js"></script>
+	<script src="js/showweather.js"></script>
+	<script src="js/Chart.js"></script>
+	
+</head>
+
+<body>				
+<div class="container">
+	<h1 class="text" id="header">Погода</h1>
+	
+	<div class="left">
+		<p class ="text">
+			<label for="">Страна </label>
+			<select id='box' onchange="return showProvinces()">
+				<option value="" disabled selected>Выбирите страну</option>
+				<option value="UA">Ukraine</option>
+				<option value="RU">Russia</option>
+			</select>
+		</p>
+		<p class ="text">
+			<label for="">Город</label>
+			
+   			
+			<div id="city">
+			</div>
+		</p>
+	</div>
+
+	<div class="right">
+		<p id="name"></p>
+		<p id="weather"><b id="bweather"></b></p>
+		<img src="" id="img">
+		<p id="temperature"><b id="btemperature"></b></p>
+		<p id="humidity"><b id="bhumidity"></b></p>
+		<p id="pressure"><b id="bpressure"></b></p>
+		
+	</div>
+	<div id="graph_container">
+	</div>
+</div>
+					
+</body>
+</html>
